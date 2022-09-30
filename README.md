@@ -242,13 +242,8 @@ A origem de cada uma destas pastas encontra-se explicada abaixo:
 O desenvolvimento das aplicações com base nesta tecnologia têm por base uma componente de *user interface* (UI) e outra de lógica de negócio. Embora tenham por base o Dart, a componente de UI segue um paradigma diferente do que tipicamente estamos habituados a trabalhar. Consideremos os exemplos de código abaixo, è esquerda imperativa e à direita declarativa.
 
 | Imperativa      | Declarativa | 
-| :---:       |    :----:   |
-| View v = new View();
-v.setColor(Colors.RED);
-v.addChild(new Child());      | return View(
-    color: Colors.RED,
-    child: new Child()
-)       |
+| :---       |    :----   |
+| View v = new View();<br>v.setColor(Colors.RED);<br>v.addChild(new Child());|return View(<br>color: Colors.RED,<br>child: new Child())|
 
 Se observarmos cada um dos exemplos de código, consguimos perceber que à esquerda o objeto **View** possui diversos **métodos**, entre eles o **setColor** e o **addChild**. Já do lado direito, no exemplo declarativo, a afetação da cor e do filho é realizada através das **propriedades** **color** e **child**.
 
