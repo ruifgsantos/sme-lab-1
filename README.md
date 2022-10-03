@@ -4,11 +4,11 @@
 
 ## Introdução
 
-Neste laboratório vamos dar início ao estudo de uma tecnologia Híbrida-Nativa chamada Flutter que é <i>open-source</i> e desenvolvidas pela Google. O Flutter permite desenvolver aplicações multiplataforma (Android e iOS) com o mesmo código fonte. Desta forma o custo da solução é mais baixo, pois reduzimos o custo do deenvolvimento em cerca de metade, sem referir que uma vez que apenas temos um código para manter invés de dois.
+Neste laboratório vamos dar início ao estudo de uma tecnologia Híbrida-Nativa chamada Flutter que é *open-source* e desenvolvidas pela Google. O Flutter permite desenvolver aplicações multiplataforma (Android e iOS) com o mesmo código fonte. Desta forma o custo da solução é mais baixo, pois reduzimos o custo do deenvolvimento em cerca de metade, sem referir que uma vez que apenas temos um código para manter invés de dois.
 
 ## O que é o Flutter
 
-As aplicações em Flutter usam por base uma linguagem orientada a objetos também desenvolvida pela Google chamada Dart. Antes de se avançar par ao desenvolvimento de uma aplicação móvel, vamos primeiramente fazer uma pequena introdução à linguagem Dart. Para isso vamo utilizar um editor de código online de [Dart](https://dartpad.dev).
+As aplicações em Flutter usam por base uma linguagem orientada a objetos também desenvolvida pela Google chamada Dart. Antes de se avançar para o desenvolvimento de uma aplicação móvel, vamos primeiramente fazer uma pequena introdução à linguagem Dart. Para isso vamos utilizar um editor de código online de [Dart](https://dartpad.dev).
 
 ## Princípios básicos do Dart
 
@@ -26,7 +26,7 @@ void main() {
 }
 ~~~
 
-Vamos declarar na linha anterior ao **print** uma variável do tipo **String** onde iremos guardar o ano letivo da unidade curricular. O objetivo será imprimir a mensagem "Olá Sistemas móveis empresariais 2022/2023" co recurso a essa mesma variável.
+Vamos declarar na linha anterior ao **print** uma variável do tipo **String** onde iremos guardar o ano letivo da unidade curricular. O objetivo será imprimir a mensagem "Olá Sistemas móveis empresariais 2022/2023" com recurso a essa mesma variável.
 
 ~~~
 void main() {
@@ -35,7 +35,7 @@ void main() {
 }
 ~~~
 
-Tal como outra linguagem de tipagem dinâmica, O Dart permite a não especificação do tipo de variável a ser declarada.
+Tal como outras linguagens de tipagem dinâmica, o Dart permite a não especificação do tipo de variável a ser declarada.
 
 ~~~
 void main() {
@@ -44,14 +44,14 @@ void main() {
 }
 ~~~
 
-Como ilustrado no quadro abaixo, as constantes são declaradas com o modificar **final**, tal como em Java.
+Como ilustrado abaixo, as constantes são declaradas com o modificador **final**, tal como em Java.
 
 ~~~
 final String constante = "ola"; // Variável imutável ou constante
 constante = "adeus"; // Erro, fazer uma reafetação
 ~~~
 
-O Dart também permite realizar operações aritméticas diretament num **print**. Para isso, temos de envolver essa operação **dentro de uas chavetas** imediatamente a seguir ao caractere **$**.
+O Dart também permite realizar operações aritméticas diretamente num **print**. Para isso, temos de envolver essa operação **dentro de duas chavetas** imediatamente a seguir ao caractere **$**.
 
 ~~~
 void main() {
@@ -59,13 +59,13 @@ void main() {
 }
 ~~~
 
-Para finalizarmos esta parte, vamos abordar as listas. Em Dart, as listas são declaras e inicializadas com parêtesis retos (**[]**). Tomemos em consideração o seguinte exemplo onde, vamos declarar uma lista, imprimir o primeiro elemento e seguidamente percorrêla de forma a imprimir todos os seus elementos.
+Para finalizarmos esta parte, vamos abordar as listas. Em Dart, as listas são declaras e inicializadas com parêntesis retos (**[]**). Tomemos em consideração o seguinte exemplo onde, vamos declarar uma lista, imprimir o primeiro elemento e seguidamente percorrê-la de forma a imprimir todos os seus elementos.
 
 ~~~
 final palavras = ["eu", "gosto", "de", "estudar"];
 // vai imprimir a string eu
 print(palavras[0]);
-// ciclo forEach (não temos o indice de cada elemento)
+// ciclo forEach (não temos o índice de cada elemento)
 palavras.forEach((palavra) => print(palavra));
 for(int i = 0; i < palavras.length; i++) {
     print(palavras[i])
@@ -73,7 +73,7 @@ for(int i = 0; i < palavras.length; i++) {
 ~~~
 
 ## Funções
-Passando agora para o estudo das funções em Dart. A sintaxe do Dart para estes casos está alinhado com aquilo que é o comum, isto é, primeiro declaramos o tipo de dados, seguidamento o nome da função e os seus argumentos.
+Passando agora para o estudo das funções em Dart. A sintaxe do Dart para estes casos está alinhado com aquilo que é o comum, isto é, primeiro declaramos o tipo de dados, seguidamente o nome da função e os seus argumentos.
 
 ~~~
 <tipo de retorno> nome_da_função (parâmetros de entrada) {
@@ -98,7 +98,7 @@ Em semelhança a outras linguagens, o Dart também possui operadores ternários.
 
 ## Orientação a Objetos
 
-Agora que já introduzimos conceitos básicos relativamente à linguagem Dart, vamos avançar com o estudo da programação orientada a objetos. Vamos começar pelo trecho de código abaixo onde camos declarar uma classe **FiguraGeometrica**, que por sua vez será abstrata e terá um método igualmente abstrato chamado **calculaArea**.
+Agora que já introduzimos conceitos básicos relativamente à linguagem Dart, vamos avançar com o estudo da programação orientada a objetos. Vamos começar pelo trecho de código abaixo onde vamos declarar uma classe **FiguraGeometrica**, que por sua vez será abstrata e terá um método igualmente abstrato chamado **calculaArea**.
 
 ~~~
 abstract class FiguraGeometrica {
@@ -118,11 +118,13 @@ class Retangulo extends FiguraGeometrica {
         return null;
     }
 }
+
 ~~~
 
 Agora vamos adicionar os atributos de comprimento e largura à nossa classe Retangulo. Ao contrário das linguagens orientadas a objetos que estamos habituados a trabalhar, o Dart não **possui o conceito de public, package, protected e private** que por exemplo o Java tem. Em Dart, só existem dois modos de visibilidade: **private** e **public**. Qualquer atributo por omissão assume a visibilidade **public**, caso queiramos restringir a sua visibilidade basta adicionar o caracter *underscore* imediatamente antes do nome do atributo.
 
 ~~~
+
 class Retangulo extends FiguraGeometrica {
 
     double _comprimento, _altura;
@@ -140,7 +142,7 @@ class Retangulo extends FiguraGeometrica {
 }
 ~~~
 
-A forma como declaramos os construtores em Dart, é semelhante ao Java. normalmente este tipo de construtor é utilizado quando queremos trabalhar os parâmetros do construtor. Quando fazemos apenas **afetações diretas** ao atributos das classes que é o caso, o Dart possui uma forma menos verbosa de declarar o construtor.
+A forma como declaramos os construtores em Dart, é semelhante ao Java. Normalmente este tipo de construtor é utilizado quando queremos trabalhar os parâmetros do construtor. Quando fazemos apenas **afetações diretas** aos atributos das classes que é o caso, o Dart possui uma forma menos verbosa de declarar o construtor.
 
 ~~~
 Retangulo(this._comprimento, this._altura);
@@ -162,7 +164,7 @@ class Retangulo extends FiguraGeometrica {
 }
 ~~~
 
-Em Dart as instâncias podem ser criadas com recurso à *keyword* **new**, não sendo uma obrigatoriedade. Embora as duas formas estejam corretas, vamos optar pela 2ª, pois é aquela que é mais utilizada.
+Em Dart, as instâncias podem ser criadas com recurso à *keyword* **new**, não sendo uma obrigatoriedade. Embora as duas formas estejam corretas, vamos optar pela 2ª, pois é aquela que é mais utilizada.
 
 ~~~
 Retangulo ret1 = new Retangulo(10, 10); // não utlizar
@@ -172,10 +174,10 @@ Retangulo ret2 = Retangulo(10, 10); // utilizar
 Ao contrário de outras linguagens orientadas a objetos como o Java, o Dart não possui *overload* de métodos. A única opção passa pela utilização de parâmetros adicionar. Em dart, os métodos podem assumir parâmetros opcionais que são representados dentro de chavetas seguido do valor por omissão.
 
 ~~~
-métodos(tipo obrigatório, {tipo parametro = valor});
+método(tipo obrigatório, {tipo parametro = valor});
 ~~~
 
-Vamos implementar o método **incrementarArea** que terá um parâmetro opcional incremento. Caso este métodos seja invocado sem nenhum parâmetro, o comprimento e altura do retangulo aumentará em uma unidade. Por outro lado, se quisermos aumentar em 10 unidade teremos de passar esse mesmo valor como argumento.
+Vamos implementar o método **incrementarArea** que terá um parâmetro opcional incremento. Caso este método seja invocado sem nenhum parâmetro, o comprimento e altura do retangulo aumentará em uma unidade. Por outro lado, se quisermos aumentar em 10 unidade teremos de passar esse mesmo valor como argumento.
 
 ~~~
 void incrementarArea({double incremento = 1}) {
@@ -184,7 +186,7 @@ void incrementarArea({double incremento = 1}) {
 }
 ~~~
 
-**Antes de testarmos este novo método** vamos fazer *override* do método **toString** para imprimirno formato <comprimento: x, altura: y>
+**Antes de testarmos este novo método** vamos fazer *override* do método **toString** para imprimir no formato **comprimento: x, altura: y**
 
 ~~~
 Retangulo retangulo = Retangulo(10, 10);
@@ -219,7 +221,7 @@ Vamos agora fazer download deste [projeto]() e abrir a base do projeto em Flutte
 <image here>
 
 ~~~
-NOTA: esta é a pasta que deve ser aberta como projeto, em nenhum caso devem abrir a pasta com nome android que se encontra dentro do projeto em Flutter. Devem adicionalmente, na vista da estrutura de ficheiros do IDE escolher a vista Project.
+NOTA: esta é a pasta que deve ser aberta como projeto, em nenhum caso devem abrir a pasta com nome android<br> que se encontra dentro do projeto em Flutter. <br>Devem adicionalmente, na vista da estrutura de ficheiros do IDE escolher a vista Project.
 ~~~
 
 <imagem here>
