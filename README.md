@@ -493,8 +493,8 @@ Como resultado final da nossa aplicação, seque-se a figura abaixo já com o re
 <p align="center">
   <img src="fab2.png"/>
 </p>
-    
-## Exercício
+
+## Exercícios
 
  1. Adicione um botão que permita decrementar o contador;
  2. Vamos adicionar um botão que permita fazer reset do contador;
