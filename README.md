@@ -31,7 +31,7 @@ Vamos declarar na linha anterior ao **print** uma variável do tipo **String** o
 ~~~
 void main() {
     String anoLetivo = "2022/2023";
-    print("Olá Sistema móveis empresariais $aoLetivo");
+    print("Olá Sistema móveis empresariais $anoLetivo");
 }
 ~~~
 
@@ -59,7 +59,7 @@ void main() {
 }
 ~~~
 
-Para finalizarmos esta parte, vamos abordar as listas. Em Dart, as listas são declaras e inicializadas com parêntesis retos (**[]**). Tomemos em consideração o seguinte exemplo onde, vamos declarar uma lista, imprimir o primeiro elemento e seguidamente percorrê-la de forma a imprimir todos os seus elementos.
+Para finalizarmos esta parte, vamos abordar as listas. Em Dart, as listas são declaradas e inicializadas com parêntesis retos (**[]**). Tomemos em consideração o seguinte exemplo onde, vamos declarar uma lista, imprimir o primeiro elemento e seguidamente percorrê-la de forma a imprimir todos os seus elementos.
 
 ~~~
 final palavras = ["eu", "gosto", "de", "estudar"];
