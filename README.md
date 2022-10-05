@@ -218,8 +218,9 @@ Agora que já tivemos uma pequena introdução ao Dart, no restante laboratório
 ## Abrir um projeto em Flutter
 Vamos agora fazer download deste [projeto]() e abrir a base do projeto em Flutter que vamos trabalhar no resto do laboratório. Para abrirmos um projeto em Flutter, temos em primeiro lugar de abrir o Android Studio e seguidamente selecionar a opção *Open*, onde vamos procurar na estruturas de pastas do nosso sistema operativo a localização do projeto. Ao encontrarmos a pasta do respetivo, basta apenas selecioná-la e seguidamente em *Ok*.
 
-![structure1](structure.png "Folder structure")
-
+<p align="center">
+  <img src="structure.png"/>
+</p>
 ~~~
 NOTA: esta é a pasta que deve ser aberta como projeto, em nenhum caso devem abrir a pasta com nome android<br> que se encontra dentro do projeto em Flutter. <br>Devem adicionalmente, na vista da estrutura de ficheiros do IDE escolher a vista Project.
 ~~~
