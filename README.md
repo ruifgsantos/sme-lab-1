@@ -498,9 +498,11 @@ Como resultado final da nossa aplicação, seque-se a figura abaixo já com o re
 
  1. Adicione um botão que permita decrementar o contador;
  2. Vamos adicionar um botão que permita fazer reset do contador;
- 3. Agora adicione um botão e uma caixa de texto que permita alterar o contador para o valor especificado na caixa de texto tal como ilustrado na figura abaixo
+ 3. Agora adicione um botão e uma caixa de texto que permita alterar o contador para o valor especificado na caixa de texto tal como ilustrado na figura abaixo.
+    
  <p align="center">
   <img src="exercise.png"/>
 </p>
+    
  Dica: Neste exercício podem utilizar o *widget* **TextField** para que o utilizador consiga escrever o número que pretende, onde seguidamente  irão necessitar instanciar e passar à referência **controller** na **TextField** um objeto do tipo **TextEditingcontroller**. Este objeto  permitirá recolher o que o utilizador escreveu na **TextField** através do atributo **text**.
  4. Transforme o texto OlaMundo e o contador num único *widget*, vamos chamar-lhe **WelcomeCountar**.
