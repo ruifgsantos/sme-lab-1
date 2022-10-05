@@ -221,17 +221,22 @@ Vamos agora fazer download deste [projeto]() e abrir a base do projeto em Flutte
 <p align="center">
   <img src="structure.png"/>
 </p>
+
 ~~~
 NOTA: esta é a pasta que deve ser aberta como projeto, em nenhum caso devem abrir a pasta com nome android<br> que se encontra dentro do projeto em Flutter. <br>Devem adicionalmente, na vista da estrutura de ficheiros do IDE escolher a vista Project.
 ~~~
 
-<imagem here>
+<p align="center">
+  <img src="structure_1.png"/>
+</p>
 
 ## Estrutura de pastas
 
 Nesta parte do laboratório vamos analisar e compreender a estrutura de um projeto em Flutter. Do lado esquerdo temos a estrutura de pastas do nosso projeto, essa estrutura encontra-se ilustrada na figura abaixo:
 
-<imagem here>
+<p align="center">
+  <img src="structure_2.png"/>
+</p>
 
 A origem de cada uma destas pastas encontra-se explicada abaixo:
 
@@ -292,15 +297,21 @@ class HomeScreen extends StatelessWidget {
 
 Para testarmos o funcionamento do mesmo, basta premir o botão de *run* que se encontra no canto superior direito do Android Studio.
 
-<image here android studio run>
+<p align="center">
+  <img src="run.png"/>
+</p>
 
 Ao fim de alguns momento, no nosso dispositivo Android (seja ele um emulador ou um *smartphone* fisico), a nossa aplicação será lançada com o aspeto da figura abaixo.
 
-<image here landing page app>
+<p align="center">
+  <img src="home_page.png"/>
+</p>
 
 No código acima temos vários *widgets*, mas antes de percebermos o papel de cada um deles, vamos primeiro observar o encadeamento existente entre eles, de forma que possamos mais facilmente entedê-lo.
 
-<image here diagrama>
+<p align="center">
+  <img src="diagram.png"/>
+</p>
 
 Vamos agora perceber o papel de cada um dos *widgets* envolvidos nesta aplicação:
 
@@ -310,7 +321,13 @@ Vamos agora perceber o papel de cada um dos *widgets* envolvidos nesta aplicaç�
  4. O **Scaffold** é um *wdiget* nativo do Flutter e fornece um *Application Programming Interface* (API) do material design do Android. Este *widget* faz parte da biblioteca do Flutter, não sendo por isso um *widget* desenvolvido pelo programador. Deste *widget* temos uma ramificação que permitirá criarmos a nossa AppBar e a nossa mensagem "Olá Mundo!!! no centro do ecrã.
  5. AppBar
     * O **AppBar** é um dos *widgets* mais utilizados do Flutter. É através dele que a nossa aplicação obtém uma barra de título tal como       podemos observar na figura abaixo. Este *widget* encontra-se ligado ao anterior (**Scaffold**) através da propriedade **appBar**.
+    <p align="center">
+  <img src="appbar.png"/>
+</p>
     * Se quisermos adicionar um título à nossa AppBar temos de adicionar um outro *wiget* do tipo *Text**. Este *widget* ligar-se-à à AppBar através da propriedade **title**. A figura abaixo ilustra esse mesmo título.
+        <p align="center">
+  <img src="appbar_2.png"/>
+</p>
  6. Center
     * O *widget* Center como o próprio nome indica tem como objetico centrar um determinado *widget*
     * O **Text** já foi explicado no ponto 5. De forma que o texto fique centrado, este *widget* ficará afeto à propriedade **body** do *widget* pai que é o **Center**.
@@ -444,7 +461,9 @@ setState(() {
 
 Vamos agora voltar à nossa aplicação e vamos pressionar por diversas vezes o nosso FAB, iremos constatar que a variável está a ser incrementada tal como podemos observar na figura abaixo.
 
-<imagem>
+<p align="center">
+  <img src="fab.png"/>
+</p>
 
 A título experimental, vamos declarar um método com o nome **incrementar** que irá somente lá está, incrementar o valor da variável contador. Seguidamente, passamos esse método como argumento ao **setState**, iremos constatar que o comportamento será o mesmo. O pedaço de código relativo a esta alteração encontra-se disponível no quadro abaixo:
 
@@ -471,10 +490,17 @@ floatingActionButton: FloatingActionButton(
 
 Como resultado final da nossa aplicação, seque-se a figura abaixo já com o respetivo ícone.
 
+<p align="center">
+  <img src="fab2.png"/>
+</p>
+    
 ## Exercício
 
  1. Adicione um botão que permita decrementar o contador;
  2. Vamos adicionar um botão que permita fazer reset do contador;
- 3. Agora adicione um botão e uma caixa de texto que permita alterar o contador para o valor especificado na caixa de texto tal como ilustrado na figura abaixo;
+ 3. Agora adicione um botão e uma caixa de texto que permita alterar o contador para o valor especificado na caixa de texto tal como ilustrado na figura abaixo
+ <p align="center">
+  <img src="exercise.png"/>
+</p>
  Dica: Neste exercício podem utilizar o *widget* **TextField** para que o utilizador consiga escrever o número que pretende, onde seguidamente  irão necessitar instanciar e passar à referência **controller** na **TextField** um objeto do tipo **TextEditingcontroller**. Este objeto  permitirá recolher o que o utilizador escreveu na **TextField** através do atributo **text**.
  4. Transforme o texto OlaMundo e o contador num único *widget*, vamos chamar-lhe **WelcomeCountar**.
