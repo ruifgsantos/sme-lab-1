@@ -216,7 +216,7 @@ Agora que já concluímos esta breve introdução à linguagem Dart, vamos apena
 Agora que já tivemos uma pequena introdução ao Dart, no restante laboratório, vamos trabalhar com o Flutter.
 
 ## Abrir um projeto em Flutter
-Vamos agora fazer download deste [projeto]() e abrir a base do projeto em Flutter que vamos trabalhar no resto do laboratório. Para abrirmos um projeto em Flutter, temos em primeiro lugar de abrir o Android Studio e seguidamente selecionar a opção *Open*, onde vamos procurar na estruturas de pastas do nosso sistema operativo a localização do projeto. Ao encontrarmos a pasta do respetivo, basta apenas selecioná-la e seguidamente em *Ok*.
+Vamos agora fazer download deste [projeto](https://github.com/ruifgsantos/sme-starter) e abrir a base do projeto em Flutter que vamos trabalhar no resto do laboratório. Para abrirmos um projeto em Flutter, temos em primeiro lugar de abrir o Android Studio e seguidamente selecionar a opção *Open*, onde vamos procurar na estruturas de pastas do nosso sistema operativo a localização do projeto. Ao encontrarmos a pasta do respetivo, basta apenas selecioná-la e seguidamente em *Ok*.
 
 <p align="center">
   <img src="structure.png"/>
@@ -267,7 +267,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
-        return MAterialApp(
+        return MaterialApp(
             title: 'Título Gestor de Janelas',
             theme: ThemeData(
                 primarySwatch: Colors.blue,
@@ -285,7 +285,7 @@ class HomeScreen extends StatelessWidget {
     Widget build(BuildContext context) {
         return Scaffold(
             appBar: AppBar(
-                title: Text(this.title)
+                title: Text(title)
             ),
             body: Center(
                 child: Text('Olá Mundo!!!)
@@ -504,5 +504,6 @@ Como resultado final da nossa aplicação, seque-se a figura abaixo já com o re
   <img src="exercise.png"/>
 </p>
     
- Dica: Neste exercício podem utilizar o *widget* **TextField** para que o utilizador consiga escrever o número que pretende, onde seguidamente  irão necessitar instanciar e passar à referência **controller** na **TextField** um objeto do tipo **TextEditingcontroller**. Este objeto  permitirá recolher o que o utilizador escreveu na **TextField** através do atributo **text**.
- 4. Transforme o texto OlaMundo e o contador num único *widget*, vamos chamar-lhe **WelcomeCountar**.
+ Dica: Neste exercício podem utilizar o *widget* **TextField** para que o utilizador consiga escrever o número que pretende, onde seguidamente  irão necessitar instanciar e passar à referência **controller** na **TextField** um objeto do tipo **TextEditingController**. Este objeto  permitirá recolher o que o utilizador escreveu na **TextField** através do atributo **text**. [Mais ajuda aqui](https://docs.flutter.dev/cookbook/forms/retrieve-input)
+ 4. Transforme o texto OlaMundo e o contador num único *widget*, vamos chamar-lhe **WelcomeCounter**.
+ 5. Crie um outro contador que incrementa o seu valor a cada segundo. Este deve também ter a possibilidade de alterar o valor que é incrementado a cada segundo. [Mais ajuda aqui](https://api.dart.dev/stable/2.18.2/dart-async/Timer/Timer.periodic.html)
