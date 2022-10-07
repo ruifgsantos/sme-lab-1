@@ -508,3 +508,11 @@ Como resultado final da nossa aplicação, seque-se a figura abaixo já com o re
  
  4. Transforme o texto OlaMundo e o contador num único *widget*, vamos chamar-lhe **WelcomeCounter**.
  5. Crie um outro contador que incrementa o seu valor a cada segundo. Este deve ter a possibilidade de alterar o valor que é incrementado a cada segundo. [Mais ajuda aqui](https://api.dart.dev/stable/2.18.2/dart-async/Timer/Timer.periodic.html)
+
+    
+## Entrega
+
+Devem entregar um ficeiro .zip com os seguintes conteúdos:
+
+* Código desenvolvido (não incluir a pasta **build**);
+* Relatório com os pontos desenvolvidos e explicação breve do mesmo.
