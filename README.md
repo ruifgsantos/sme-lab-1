@@ -498,12 +498,13 @@ Como resultado final da nossa aplicação, seque-se a figura abaixo já com o re
 
  1. Adicione um botão que permita decrementar o contador;
  2. Vamos adicionar um botão que permita fazer reset do contador;
- 3. Agora adicione um botão e uma caixa de texto que permita alterar o contador para o valor especificado na caixa de texto tal como ilustrado na figura abaixo.
+ 3. Agora adicione um botão e uma caixa de texto que permita alterar o contador para o valor especificado na caixa de texto tal como ilustrado na figura abaixo;
     
  <p align="center">
   <img src="exercise.png"/>
 </p>
     
  Dica: Neste exercício podem utilizar o *widget* **TextField** para que o utilizador consiga escrever o número que pretende, onde seguidamente  irão necessitar instanciar e passar à referência **controller** na **TextField** um objeto do tipo **TextEditingController**. Este objeto  permitirá recolher o que o utilizador escreveu na **TextField** através do atributo **text**. [Mais ajuda aqui](https://docs.flutter.dev/cookbook/forms/retrieve-input)
+ 
  4. Transforme o texto OlaMundo e o contador num único *widget*, vamos chamar-lhe **WelcomeCounter**.
- 5. Crie um outro contador que incrementa o seu valor a cada segundo. Este deve também ter a possibilidade de alterar o valor que é incrementado a cada segundo. [Mais ajuda aqui](https://api.dart.dev/stable/2.18.2/dart-async/Timer/Timer.periodic.html)
+ 5. Crie um outro contador que incrementa o seu valor a cada segundo. Este deve ter a possibilidade de alterar o valor que é incrementado a cada segundo. [Mais ajuda aqui](https://api.dart.dev/stable/2.18.2/dart-async/Timer/Timer.periodic.html)
