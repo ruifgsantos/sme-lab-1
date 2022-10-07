@@ -91,7 +91,7 @@ void main() {
 int maiorInteiro(int a, int b) {
     return a > b ? a : b;
 }
-int menorInteiro(int a, int b) => a < b ? b : a;
+int menorInteiro(int a, int b) => a < b ? a : b;
 ~~~
 
 Em semelhança a outras linguagens, o Dart também possui operadores ternários. Tal como podemos verificar dentro da função **maiorInteiro**, estamos a utilizar esse mesmo operador para devolver o maior número entre dois inteiros. Podemos omitir o tipo de dados assim como o retorno com a utilização de *lambdas* tal como exemplificado no método **menorInteiro**.
