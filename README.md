@@ -321,13 +321,17 @@ Vamos agora perceber o papel de cada um dos *widgets* envolvidos nesta aplicaç�
  4. O **Scaffold** é um *wdiget* nativo do Flutter e fornece um *Application Programming Interface* (API) do material design do Android. Este *widget* faz parte da biblioteca do Flutter, não sendo por isso um *widget* desenvolvido pelo programador. Deste *widget* temos uma ramificação que permitirá criarmos a nossa AppBar e a nossa mensagem "Olá Mundo!!! no centro do ecrã.
  5. AppBar
     * O **AppBar** é um dos *widgets* mais utilizados do Flutter. É através dele que a nossa aplicação obtém uma barra de título tal como       podemos observar na figura abaixo. Este *widget* encontra-se ligado ao anterior (**Scaffold**) através da propriedade **appBar**.
+    
     <p align="center">
   <img src="appbar.png"/>
 </p>
+
     * Se quisermos adicionar um título à nossa AppBar temos de adicionar um outro *wiget* do tipo *Text**. Este *widget* ligar-se-à à AppBar através da propriedade **title**. A figura abaixo ilustra esse mesmo título.
+    
         <p align="center">
   <img src="appbar_2.png"/>
 </p>
+
  6. Center
     * O *widget* Center como o próprio nome indica tem como objetico centrar um determinado *widget*
     * O **Text** já foi explicado no ponto 5. De forma que o texto fique centrado, este *widget* ficará afeto à propriedade **body** do *widget* pai que é o **Center**.
